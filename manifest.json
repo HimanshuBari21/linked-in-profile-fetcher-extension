@@ -1,0 +1,21 @@
+{
+    "name": "Linkedin Profile Fetcher",
+    "version": "1.0.0",
+    "description": "Linkedin Profile Fetcher",
+    "manifest_version": 3,
+    "author": "Himanshu Bari",
+    "action": {
+        "default_icon": "logo.png",
+        "default_title": "Get Profile Data"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.linkedin.com/in/*"
+            ],
+            "js": [
+                "script.js"
+            ]
+        }
+    ]
+}
